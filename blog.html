@@ -1,83 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- common meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="images/logo/faveicon.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="images/logo/faveicon.jpg" type="image/x-icon" />
     <!--=== fontaswesome ===-->
     <link rel="stylesheet" href="assets/fontaswesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/fontaswesome/css/fontawesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
     <!--=== owl carousel css === -->
     <!--=== jquary modal css ===-->
     <link rel="stylesheet" href="css/vendor/jquery.modal.min.css" />
     <!--=== main css ===-->
     <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="stylesheet" href="css/custom.css" />
-    <title>Blog - Bostami Tailwind CSS Personal Portfolio HTML Template</title>
+    <title>Blog - Younsse tebai</title>
     <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.getItem("color-theme") === "dark" ||
-        (!("color-theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- PRELOADER -->
     <div id="preloader">
-      <div class="loader_line"></div>
+        <div class="loader_line"></div>
     </div>
     <!-- /PRELOADER -->
 
-    <div
-      class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full"
-    >
-      <div class="z-50">
-        <!-- container start -->
-        <div class="container">
-          <!-- header start for large screens -->
-          <header
-            class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]"
-          >
-            <div
-              class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black"
-            >
-              <div
-                class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5"
-              >
-                <!-- website logo -->
-                <a class="text-5xl font-semibold" href="index.html">
-                  <img
-                    class="h-[26px] lg:h-[32px]"
-                    src="images/logo/logo.png"
-                    alt="logo"
-                  />
-                </a>
-                <div class="flex items-center">
-                  <!-- light and dark mode button -->
-                  <button
-                    id="theme-toggle-mobile"
-                    type="button"
-                    class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2"
-                  >
+    <div class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+        <div class="z-50">
+            <!-- container start -->
+            <div class="container">
+                <!-- header start for large screens -->
+                <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
+                    <div class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black">
+                        <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
+                            <!-- website logo -->
+                            <a class="text-5xl font-semibold" href="index.html">
+                                <img class="h-[26px] lg:h-[32px]" src="images/logo/logo.png" alt="logo" />
+                            </a>
+                            <div class="flex items-center">
+                                <!-- light and dark mode button -->
+                                <button id="theme-toggle-mobile" type="button" class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
                     <i
                       id="theme-toggle-dark-icon-mobile"
                       class="fa-solid text-xl fa-moon hidden"
@@ -87,12 +65,8 @@
                       class="fa-solid fa-sun text-xl hidden"
                     ></i>
                   </button>
-                  <!-- mobile toggle button -->
-                  <button
-                    id="menu-toggle"
-                    type="button"
-                    class="menu-toggle-btn"
-                  >
+                                <!-- mobile toggle button -->
+                                <button id="menu-toggle" type="button" class="menu-toggle-btn">
                     <i
                       id="menu-toggle-open-icon"
                       class="fa-solid fa-bars text-xl"
@@ -102,68 +76,58 @@
                       class="fa-solid fa-xmark text-xl hidden"
                     ></i>
                   </button>
-                </div>
-              </div>
-            </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- header items two for large screens -->
-            <nav class="hidden lg:block">
-              <ul class="flex my-12">
-                <li>
-                  <a class="menu-item-two" href="index.html">
-                    <span class="mr-2 text-base">
+                    <!-- header items two for large screens -->
+                    <nav class="hidden lg:block">
+                        <ul class="flex my-12">
+                            <li>
+                                <a class="menu-item-two" href="index.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-solid fa-house"></i>
-                    </span>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="about.html">
-                    <span class="mr-2 text-base">
+                    </span> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="about.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-regular fa-user"></i>
-                    </span>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="resume.html">
-                    <span class="mr-2 text-base">
+                    </span> About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="resume.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-regular fa-file-lines"></i>
-                    </span>
-                    Resume
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="portfilo.html">
-                    <span class="mr-2 text-base">
+                    </span> Resume
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="portfilo.html">
+                                    <span class="mr-2 text-base">
                       <i class="fas fa-briefcase"></i>
-                    </span>
-                    Works
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two-active" href="blog.html">
-                    <span class="mr-2 text-base">
+                    </span> Works
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two-active" href="blog.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-brands fa-blogger"></i>
-                    </span>
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="contact.html">
-                    <span class="mr-2 text-base">
+                    </span> Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="contact.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-solid fa-address-book"></i>
-                    </span>
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <!-- light and dark mode button -->
-                  <button
-                    id="theme-toggle"
-                    type="button"
-                    class="dark-light-btn w-[44px] h-[44px] ml-2"
-                  >
+                    </span> Contact
+                                </a>
+                            </li>
+                            <li>
+                                <!-- light and dark mode button -->
+                                <button id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
                     <i
                       id="theme-toggle-dark-icon"
                       class="fa-solid text-xl fa-moon hidden"
@@ -173,102 +137,81 @@
                       class="fa-solid fa-sun text-xl hidden"
                     ></i>
                   </button>
-                </li>
-              </ul>
-            </nav>
+                            </li>
+                        </ul>
+                    </nav>
 
-            <!-- mobile menu start -->
-            <nav id="navbar" class="hidden lg:hidden">
-              <ul
-                class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]"
-              >
-                <li>
-                  <a class="mobile-menu-item-twos" href="index.html">
-                    <span class="mr-2 text-xl">
+                    <!-- mobile menu start -->
+                    <nav id="navbar" class="hidden lg:hidden">
+                        <ul class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+                            <li>
+                                <a class="mobile-menu-item-twos" href="index.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-solid fa-house"></i>
-                    </span>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="about.html">
-                    <span class="mr-2 text-xl">
+                    </span> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="about.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-regular fa-user"></i>
-                    </span>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="resume.html">
-                    <span class="mr-2 text-xl">
+                    </span> About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="resume.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-regular fa-file-lines"></i>
-                    </span>
-                    Resume
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="portfilo.html">
-                    <span class="mr-2 text-xl">
+                    </span> Resume
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="portfilo.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fas fa-briefcase"></i>
-                    </span>
-                    Works
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos-active" href="blog.html">
-                    <span class="mr-2 text-xl">
+                    </span> Works
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos-active" href="blog.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-brands fa-blogger"></i>
-                    </span>
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="contact.html">
-                    <span class="mr-2 text-xl">
+                    </span> Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="contact.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-solid fa-address-book"></i>
-                    </span>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <!-- mobile menu end -->
-          </header>
-          <!-- header  end -->
+                    </span> Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- mobile menu end -->
+                </header>
+                <!-- header  end -->
 
-          <!-- blog   section start -->
-          <div class="bg-white lg:rounded-2xl dark:bg-[#111111]">
-            <div class="container px-4 sm:px-5 md:px-10 lg:px-[60px]">
-              <div class="py-12">
-                <h2 class="after-effect after:left-32 mt-12 lg:mt-0">Blogs</h2>
-                <div
-                  class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[30px] grid gap-x-10 gap-y-7 mb-6"
-                >
-                  <!-- blog items one start -->
+                <!-- blog   section start -->
+                <div class="bg-white lg:rounded-2xl dark:bg-[#111111]">
+                    <div class="container px-4 sm:px-5 md:px-10 lg:px-[60px]">
+                        <div class="py-12">
+                            <h2 class="after-effect after:left-32 mt-12 lg:mt-0">Blogs</h2>
+                            <div class="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-[30px] grid gap-x-10 gap-y-7 mb-6">
+                                <!-- blog items one start -->
 
-                  <div
-                    class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2"
-                  >
-                    <div class="overflow-hidden rounded-lg">
-                      <a href="#ex1" rel="modal:open">
-                        <img
-                          class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                          src="images/blog_images/small/1.jpg"
-                          alt="blog image"
-                        />
-                      </a>
-                    </div>
-                    <div
-                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
-                    >
-                      <span>17 April</span>
-                      <span class="dot-icon">Inspiration</span>
-                    </div>
-                    <h3
-                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
-                    >
-                      <a href="#ex1" rel="modal:open"
-                        >How to Own Your Audience by Creating an Email List.</a
+                                <div class="p-5 rounded-lg mb-2 h-full bg-[#fcf4ff] dark:bg-transparent dark:border-[#212425] dark:border-2">
+                                    <div class="overflow-hidden rounded-lg">
+                                        <a href="#ex1" rel="modal:open">
+                                            <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="images/blog_images/small/1.jpg" alt="blog image" />
+                                        </a>
+                                    </div>
+                                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                        <span>17 April</span>
+                                        <span class="dot-icon">Inspiration</span>
+                                    </div>
+                                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                        <a href="#ex1" rel="modal:open">How to Own Your Audience by Creating an Email List.</a
                       >
                     </h3>
                   </div>
@@ -286,47 +229,32 @@
                           alt="blog image"
                         />
                       </a>
-                    </div>
-                    <div
-                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
-                    >
-                      <span>10 April</span>
-                      <span class="dot-icon">Inspiration</span>
-                    </div>
-                    <h3
-                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
-                    >
-                      <a href="#ex2" rel="modal:open">
+                                </div>
+                                <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                    <span>10 April</span>
+                                    <span class="dot-icon">Inspiration</span>
+                                </div>
+                                <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    <a href="#ex2" rel="modal:open">
                         Everything You Need to Know About Web Accessibility.
                       </a>
-                    </h3>
-                  </div>
-                  <!-- blog items two end  -->
+                                </h3>
+                            </div>
+                            <!-- blog items two end  -->
 
-                  <!-- blog items three start -->
-                  <div
-                    class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] dark:border-2 bg-[#fcf4ff] dark:bg-transparent"
-                  >
-                    <div class="overflow-hidden rounded-lg">
-                      <a href="#ex3" rel="modal:open">
-                        <img
-                          class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110"
-                          src="images/blog_images/small/3.jpg"
-                          alt="blog image"
-                        />
-                      </a>
-                    </div>
-                    <div
-                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
-                    >
-                      <span>21 April</span>
-                      <span class="dot-icon">Web Design</span>
-                    </div>
-                    <h3
-                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
-                    >
-                      <a href="#ex3" rel="modal:open"
-                        >he window know to say beside you</a
+                            <!-- blog items three start -->
+                            <div class="p-5 rounded-lg mb-2 h-full dark:border-[#212425] dark:border-2 bg-[#fcf4ff] dark:bg-transparent">
+                                <div class="overflow-hidden rounded-lg">
+                                    <a href="#ex3" rel="modal:open">
+                                        <img class="rounded-lg w-full cursor-pointer transition duration-200 ease-in-out transform hover:scale-110" src="images/blog_images/small/3.jpg" alt="blog image" />
+                                    </a>
+                                </div>
+                                <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                    <span>21 April</span>
+                                    <span class="dot-icon">Web Design</span>
+                                </div>
+                                <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                    <a href="#ex3" rel="modal:open">he window know to say beside you</a
                       >T
                     </h3>
                   </div>
@@ -344,18 +272,13 @@
                           alt="blog image"
                         />
                       </a>
-                    </div>
-                    <div
-                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
-                    >
-                      <span>27 April</span>
-                      <span class="dot-icon">Inspiration</span>
-                    </div>
-                    <h3
-                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
-                    >
-                      <a href="#ex4" rel="modal:open"
-                        >Top 10 Toolkits for Deep Learning in 2021.</a
+                            </div>
+                            <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                                <span>27 April</span>
+                                <span class="dot-icon">Inspiration</span>
+                            </div>
+                            <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                                <a href="#ex4" rel="modal:open">Top 10 Toolkits for Deep Learning in 2021.</a
                       >
                     </h3>
                   </div>
@@ -373,18 +296,13 @@
                           alt="blog image"
                         />
                       </a>
-                    </div>
-                    <div
-                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
-                    >
-                      <span>27 April</span>
-                      <span class="dot-icon">Inspiration</span>
-                    </div>
-                    <h3
-                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
-                    >
-                      <a href="#ex5" rel="modal:open"
-                        >How to Own Your Audience by Creating an Email List.</a
+                        </div>
+                        <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                            <span>27 April</span>
+                            <span class="dot-icon">Inspiration</span>
+                        </div>
+                        <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                            <a href="#ex5" rel="modal:open">How to Own Your Audience by Creating an Email List.</a
                       >
                     </h3>
                   </div>
@@ -403,17 +321,12 @@
                         />
                       </a>
                     </div>
-                    <div
-                      class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]"
-                    >
-                      <span>27 April</span>
-                      <span class="dot-icon">Inspiration</span>
+                    <div class="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                        <span>27 April</span>
+                        <span class="dot-icon">Inspiration</span>
                     </div>
-                    <h3
-                      class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]"
-                    >
-                      <a href="#ex6" rel="modal:open"
-                        >Everything You Need to Know About Web Accessibility.</a
+                    <h3 class="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                        <a href="#ex6" rel="modal:open">Everything You Need to Know About Web Accessibility.</a
                       >
                     </h3>
                   </div>
@@ -541,40 +454,28 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </span>
                 </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#1C9CEA]">
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <span class="socialbtn text-[#1C9CEA]">
                     <i class="fa-brands fa-twitter"></i>
                   </span>
-                </a>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#e14a84]">
+                        </a>
+                        <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                            <span class="socialbtn text-[#e14a84]">
                     <i class="fa-brands fa-dribbble"></i>
                   </span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#0072b1]">
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <span class="socialbtn text-[#0072b1]">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </span>
-                </a>
-              </div>
+                        </a>
+                </div>
             </div>
 
             <div class="pt-3">
-              <div class="pr-3 pb-4">
-                <form class="w-full">
-                  <label class="block mb-2">
+                <div class="pr-3 pb-4">
+                    <form class="w-full">
+                        <label class="block mb-2">
                     <span class="dark:text-white text-[25px] font-medium"
                       >Leave a Reply</span
                     >
@@ -583,16 +484,12 @@
                       rows="3"
                     ></textarea>
                   </label>
-                  <button class="comment-btn">Comment</button>
-                </form>
-              </div>
+                        <button class="comment-btn">Comment</button>
+                    </form>
+                </div>
             </div>
-          </div>
-          <a
-            href="#close-modal"
-            rel="modal:close"
-            class="close bg-close-light dark:bg-close-dark"
-            >Close</a
+        </div>
+        <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a
           >
           <a
             href="#close-modal"
@@ -702,40 +599,28 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </span>
                 </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#1C9CEA]">
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <span class="socialbtn text-[#1C9CEA]">
                     <i class="fa-brands fa-twitter"></i>
                   </span>
-                </a>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#e14a84]">
+        </a>
+        <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+            <span class="socialbtn text-[#e14a84]">
                     <i class="fa-brands fa-dribbble"></i>
                   </span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#0072b1]">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <span class="socialbtn text-[#0072b1]">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </span>
-                </a>
-              </div>
-            </div>
+        </a>
+    </div>
+    </div>
 
-            <div class="pt-3">
-              <div class="pr-3 pb-4">
-                <form class="w-full">
-                  <label class="block mb-2">
+    <div class="pt-3">
+        <div class="pr-3 pb-4">
+            <form class="w-full">
+                <label class="block mb-2">
                     <span class="dark:text-white text-[25px] font-medium"
                       >Leave a Reply</span
                     >
@@ -744,16 +629,12 @@
                       rows="3"
                     ></textarea>
                   </label>
-                  <button class="comment-btn">Comment</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <a
-            href="#close-modal"
-            rel="modal:close"
-            class="close bg-close-light dark:bg-close-dark"
-            >Close</a
+                <button class="comment-btn">Comment</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a
           >
           <a
             href="#close-modal"
@@ -863,40 +744,28 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </span>
                 </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#1C9CEA]">
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#1C9CEA]">
                     <i class="fa-brands fa-twitter"></i>
                   </span>
-                </a>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#e14a84]">
+    </a>
+    <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#e14a84]">
                     <i class="fa-brands fa-dribbble"></i>
                   </span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#0072b1]">
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#0072b1]">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </span>
-                </a>
-              </div>
-            </div>
+    </a>
+    </div>
+    </div>
 
-            <div class="pt-3">
-              <div class="pr-3 pb-4">
-                <form class="w-full">
-                  <label class="block mb-2">
+    <div class="pt-3">
+        <div class="pr-3 pb-4">
+            <form class="w-full">
+                <label class="block mb-2">
                     <span class="dark:text-white text-[25px] font-medium"
                       >Leave a Reply</span
                     >
@@ -905,16 +774,12 @@
                       rows="3"
                     ></textarea>
                   </label>
-                  <button class="comment-btn">Comment</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <a
-            href="#close-modal"
-            rel="modal:close"
-            class="close bg-close-light dark:bg-close-dark"
-            >Close</a
+                <button class="comment-btn">Comment</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a
           >
           <a
             href="#close-modal"
@@ -1024,40 +889,28 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </span>
                 </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#1C9CEA]">
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#1C9CEA]">
                     <i class="fa-brands fa-twitter"></i>
                   </span>
-                </a>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#e14a84]">
+    </a>
+    <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#e14a84]">
                     <i class="fa-brands fa-dribbble"></i>
                   </span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#0072b1]">
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#0072b1]">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </span>
-                </a>
-              </div>
-            </div>
+    </a>
+    </div>
+    </div>
 
-            <div class="pt-3">
-              <div class="pr-3 pb-4">
-                <form class="w-full">
-                  <label class="block mb-2">
+    <div class="pt-3">
+        <div class="pr-3 pb-4">
+            <form class="w-full">
+                <label class="block mb-2">
                     <span class="dark:text-white text-[25px] font-medium"
                       >Leave a Reply</span
                     >
@@ -1066,16 +919,12 @@
                       rows="3"
                     ></textarea>
                   </label>
-                  <button class="comment-btn">Comment</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <a
-            href="#close-modal"
-            rel="modal:close"
-            class="close bg-close-light dark:bg-close-dark"
-            >Close</a
+                <button class="comment-btn">Comment</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a
           >
           <a
             href="#close-modal"
@@ -1185,40 +1034,28 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </span>
                 </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#1C9CEA]">
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#1C9CEA]">
                     <i class="fa-brands fa-twitter"></i>
                   </span>
-                </a>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#e14a84]">
+    </a>
+    <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#e14a84]">
                     <i class="fa-brands fa-dribbble"></i>
                   </span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#0072b1]">
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#0072b1]">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </span>
-                </a>
-              </div>
-            </div>
+    </a>
+    </div>
+    </div>
 
-            <div class="pt-3">
-              <div class="pr-3 pb-4">
-                <form class="w-full">
-                  <label class="block mb-2">
+    <div class="pt-3">
+        <div class="pr-3 pb-4">
+            <form class="w-full">
+                <label class="block mb-2">
                     <span class="dark:text-white text-[25px] font-medium"
                       >Leave a Reply</span
                     >
@@ -1227,16 +1064,12 @@
                       rows="3"
                     ></textarea>
                   </label>
-                  <button class="comment-btn">Comment</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <a
-            href="#close-modal"
-            rel="modal:close"
-            class="close bg-close-light dark:bg-close-dark"
-            >Close</a
+                <button class="comment-btn">Comment</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a
           >
           <a
             href="#close-modal"
@@ -1346,40 +1179,28 @@
                     <i class="fa-brands fa-facebook-f"></i>
                   </span>
                 </a>
-                <a
-                  href="https://twitter.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#1C9CEA]">
+    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#1C9CEA]">
                     <i class="fa-brands fa-twitter"></i>
                   </span>
-                </a>
-                <a
-                  href="https://dribbble.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#e14a84]">
+    </a>
+    <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#e14a84]">
                     <i class="fa-brands fa-dribbble"></i>
                   </span>
-                </a>
-                <a
-                  href="https://www.linkedin.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <span class="socialbtn text-[#0072b1]">
+    </a>
+    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+        <span class="socialbtn text-[#0072b1]">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </span>
-                </a>
-              </div>
-            </div>
+    </a>
+    </div>
+    </div>
 
-            <div class="pt-3">
-              <div class="pr-3 pb-4">
-                <form class="w-full">
-                  <label class="block mb-2">
+    <div class="pt-3">
+        <div class="pr-3 pb-4">
+            <form class="w-full">
+                <label class="block mb-2">
                     <span class="dark:text-white text-[25px] font-medium"
                       >Leave a Reply</span
                     >
@@ -1388,16 +1209,12 @@
                       rows="3"
                     ></textarea>
                   </label>
-                  <button class="comment-btn">Comment</button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <a
-            href="#close-modal"
-            rel="modal:close"
-            class="close bg-close-light dark:bg-close-dark"
-            >Close</a
+                <button class="comment-btn">Comment</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <a href="#close-modal" rel="modal:close" class="close bg-close-light dark:bg-close-dark">Close</a
           >
           <a
             href="#close-modal"

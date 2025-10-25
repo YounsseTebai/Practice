@@ -1,82 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="images/logo/faveicon.jpg"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="images/logo/faveicon.jpg" type="image/x-icon" />
     <title>
-      Resume - Bostami Tailwind CSS Personal Portfolio HTML Template
+        Resume - Younsse Tebai
     </title>
     <!--=== fontaswesome ===-->
     <link rel="stylesheet" href="assets/fontaswesome/css/all.min.css" />
     <link rel="stylesheet" href="assets/fontaswesome/css/fontawesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&amp;family=Roboto+Slab:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
     <!--=== main css ===-->
     <link rel="stylesheet" href="css/tailwind.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script>
-      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-      if (
-        localStorage.getItem("color-theme") === "dark" ||
-        (!("color-theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
-      ) {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (
+            localStorage.getItem("color-theme") === "dark" ||
+            (!("color-theme" in localStorage) &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+            document.documentElement.classList.add("dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+        }
     </script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- PRELOADER -->
     <div id="preloader">
-      <div class="loader_line"></div>
+        <div class="loader_line"></div>
     </div>
     <!-- /PRELOADER -->
 
-    <div
-      class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full"
-    >
-      <div class="z-50">
-        <!-- container start -->
-        <div class="container">
-          <!-- header start for large screens -->
-          <header
-            class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]"
-          >
-            <div
-              class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black"
-            >
-              <div
-                class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5"
-              >
-                <!-- website logo -->
-                <a class="text-5xl font-semibold" href="index.html">
-                  <img
-                    class="h-[26px] lg:h-[32px]"
-                    src="images/logo/logo.png"
-                    alt="logo"
-                  />
-                </a>
+    <div class="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+        <div class="z-50">
+            <!-- container start -->
+            <div class="container">
+                <!-- header start for large screens -->
+                <header class="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111]">
+                    <div class="flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent dark:bg-black">
+                        <div class="flex justify-between w-full items-center space-x-4 lg:my-8 my-5">
+                            <!-- website logo -->
+                            <a class="text-5xl font-semibold" href="index.html">
+                                <img class="h-[26px] lg:h-[32px]" src="images/logo/logo.png" alt="logo" />
+                            </a>
 
-                <div class="flex items-center">
-                  <!-- light and dark mode button -->
-                  <button
-                    id="theme-toggle-mobile"
-                    type="button"
-                    class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2"
-                  >
+                            <div class="flex items-center">
+                                <!-- light and dark mode button -->
+                                <button id="theme-toggle-mobile" type="button" class="dark-light-btn lg:hidden w-[44px] h-[44px] ml-2">
                     <i
                       id="theme-toggle-dark-icon-mobile"
                       class="fa-solid text-xl fa-moon hidden"
@@ -87,12 +65,8 @@
                     ></i>
                   </button>
 
-                  <!-- mobile toggle button -->
-                  <button
-                    id="menu-toggle"
-                    type="button"
-                    class="menu-toggle-btn"
-                  >
+                                <!-- mobile toggle button -->
+                                <button id="menu-toggle" type="button" class="menu-toggle-btn">
                     <i
                       id="menu-toggle-open-icon"
                       class="fa-solid fa-bars text-xl"
@@ -102,68 +76,58 @@
                       class="fa-solid fa-xmark text-xl hidden"
                     ></i>
                   </button>
-                </div>
-              </div>
-            </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- header items two for large screens -->
-            <nav class="hidden lg:block">
-              <ul class="flex my-12">
-                <li>
-                  <a class="menu-item-two" href="index.html">
-                    <span class="mr-2 text-base">
+                    <!-- header items two for large screens -->
+                    <nav class="hidden lg:block">
+                        <ul class="flex my-12">
+                            <li>
+                                <a class="menu-item-two" href="index.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-solid fa-house"></i>
-                    </span>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="about.html">
-                    <span class="mr-2 text-base">
+                    </span> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="about.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-regular fa-user"></i>
-                    </span>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two-active" href="resume.html">
-                    <span class="mr-2 text-base">
+                    </span> About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two-active" href="resume.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-regular fa-file-lines"></i>
-                    </span>
-                    Resume
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="portfilo.html">
-                    <span class="mr-2 text-base">
+                    </span> Resume
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="portfilo.html">
+                                    <span class="mr-2 text-base">
                       <i class="fas fa-briefcase"></i>
-                    </span>
-                    Works
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="blog.html">
-                    <span class="mr-2 text-base">
+                    </span> Works
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="blog.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-brands fa-blogger"></i>
-                    </span>
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a class="menu-item-two" href="contact.html">
-                    <span class="mr-2 text-base">
+                    </span> Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-item-two" href="contact.html">
+                                    <span class="mr-2 text-base">
                       <i class="fa-solid fa-address-book"></i>
-                    </span>
-                    Contact
-                  </a>
-                </li>
-                <li>
-                  <!-- light and dark mode button -->
-                  <button
-                    id="theme-toggle"
-                    type="button"
-                    class="dark-light-btn w-[44px] h-[44px] ml-2"
-                  >
+                    </span> Contact
+                                </a>
+                            </li>
+                            <li>
+                                <!-- light and dark mode button -->
+                                <button id="theme-toggle" type="button" class="dark-light-btn w-[44px] h-[44px] ml-2">
                     <i
                       id="theme-toggle-dark-icon"
                       class="fa-solid text-xl fa-moon hidden"
@@ -173,105 +137,87 @@
                       class="fa-solid fa-sun text-xl hidden"
                     ></i>
                   </button>
-                </li>
-              </ul>
-            </nav>
+                            </li>
+                        </ul>
+                    </nav>
 
-            <!-- mobile menu start -->
-            <nav id="navbar" class="hidden lg:hidden">
-              <ul
-                class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]"
-              >
-                <li>
-                  <a class="mobile-menu-item-twos" href="index.html">
-                    <span class="mr-2 text-xl">
+                    <!-- mobile menu start -->
+                    <nav id="navbar" class="hidden lg:hidden">
+                        <ul class="block rounded-b-[20px] shadow-md absolute left-0 top-20 z-[22222222222222] w-full bg-white dark:bg-[#1d1d1d]">
+                            <li>
+                                <a class="mobile-menu-item-twos" href="index.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-solid fa-house"></i>
-                    </span>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="about.html">
-                    <span class="mr-2 text-xl">
+                    </span> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="about.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-regular fa-user"></i>
-                    </span>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos-active" href="resume.html">
-                    <span class="mr-2 text-xl">
+                    </span> About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos-active" href="resume.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-regular fa-file-lines"></i>
-                    </span>
-                    Resume
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="portfilo.html">
-                    <span class="mr-2 text-xl">
+                    </span> Resume
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="portfilo.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fas fa-briefcase"></i>
-                    </span>
-                    Works
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="blog.html">
-                    <span class="mr-2 text-xl">
+                    </span> Works
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="blog.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-brands fa-blogger"></i>
-                    </span>
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a class="mobile-menu-item-twos" href="contact.html">
-                    <span class="mr-2 text-xl">
+                    </span> Blogs
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mobile-menu-item-twos" href="contact.html">
+                                    <span class="mr-2 text-xl">
                       <i class="fa-solid fa-address-book"></i>
-                    </span>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </nav>
-            <!-- mobile menu end -->
-          </header>
-          <!-- header  end -->
+                    </span> Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- mobile menu end -->
+                </header>
+                <!-- header  end -->
 
-          <!-- resume page contant start -->
-          <section class="bg-white lg:rounded-2xl dark:bg-[#111111]">
-            <div data-aos="fade" class="aos-init aos-animate">
-              <div class="container sm:px-5 md:px-10 lg:px-20">
-                <div class="py-12 px-4">
-                  <h2
-                    class="after-effect after:left-44 mb-[40px] mt-12 lg:mt-0"
-                  >
-                    Resume
-                  </h2>
-                  <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6"
-                  >
-                    <!-- eductation contain -->
-                    <div>
-                      <div class="flex items-center space-x-2 mb-4">
-                        <i
-                          class="fa-solid text-6xl text-[#F95054] fa-graduation-cap"
-                        ></i>
-                        <h4 class="text-5xl dark:text-white font-medium">
-                          Education
-                        </h4>
-                      </div>
+                <!-- resume page contant start -->
+                <section class="bg-white lg:rounded-2xl dark:bg-[#111111]">
+                    <div data-aos="fade" class="aos-init aos-animate">
+                        <div class="container sm:px-5 md:px-10 lg:px-20">
+                            <div class="py-12 px-4">
+                                <h2 class="after-effect after:left-44 mb-[40px] mt-12 lg:mt-0">
+                                    Resume
+                                </h2>
+                                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6">
+                                    <!-- eductation contain -->
+                                    <div>
+                                        <div class="flex items-center space-x-2 mb-4">
+                                            <i class="fa-solid text-6xl text-[#F95054] fa-graduation-cap"></i>
+                                            <h4 class="text-5xl dark:text-white font-medium">
+                                                Education
+                                            </h4>
+                                        </div>
 
-                      <div
-                        class="py-4 dark:bg-transparent bg-[#fff4f4] pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2"
-                      >
-                        <span
-                          class="text-tiny text-gray-lite dark:text-[#b7b7b7]"
-                          >2021-2023</span
+                                        <div class="py-4 dark:bg-transparent bg-[#fff4f4] pl-5 pr-3 space-y-2 mb-6 rounded-lg dark:border-[#212425] dark:border-2">
+                                            <span class="text-tiny text-gray-lite dark:text-[#b7b7b7]">2015 - 2021</span
                         >
                         <h3 class="text-xl dark:text-white">
-                          Ph.D in Horriblensess
+                              ècole in Had Bouhssousn
                         </h3>
                         <p class="dark:text-[#b7b7b7]">
-                          ABC University, Los Angeles, CA
+                          ècole Imam Malik, Had Bouhssousn
                         </p>
                       </div>
 
@@ -280,12 +226,12 @@
                       >
                         <span
                           class="text-tiny text-gray-lite dark:text-[#b7b7b7]"
-                          >2019 - Present</span
+                          >2021 - 2023</span
                         >
                         <h3 class="text-xl dark:text-white">
-                          Sr. Software Tester
+                          Collège
                         </h3>
-                        <p class="dark:text-[#b7b7b7]">Google Inc.</p>
+                        <p class="dark:text-[#b7b7b7]">Collège Houssin boulanwar</p>
                       </div>
 
                       <div
@@ -293,11 +239,11 @@
                       >
                         <span
                           class="text-tiny text-gray-lite dark:text-[#b7b7b7]"
-                          >2021</span
+                          >2023 - 2026</span
                         >
-                        <h3 class="text-xl dark:text-white">Best Developer</h3>
+                        <h3 class="text-xl dark:text-white">Lycèe</h3>
                         <p class="dark:text-[#b7b7b7]">
-                          University Of Melbourne, NA
+                          Lycèe Houssin boulanwar
                         </p>
                       </div>
                     </div>
@@ -424,11 +370,11 @@
                       <div class="flex justify-between mb-1">
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
-                          >Web Design</span
+                          >Php</span
                         >
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6"
-                          >65%</span
+                          >15%</span
                         >
                       </div>
                       <div
@@ -445,11 +391,11 @@
                       <div class="flex justify-between mb-1">
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
-                          >Mobile App</span
+                          >Html</span
                         >
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6"
-                          >85%</span
+                          >98%</span
                         >
                       </div>
                       <div
@@ -466,7 +412,7 @@
                       <div class="flex justify-between mb-1">
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
-                          >Illustrator</span
+                          >Css</span
                         >
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6"
@@ -487,11 +433,11 @@
                       <div class="flex justify-between mb-1">
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6]"
-                          >Photoshope</span
+                          >JavaScript</span
                         >
                         <span
                           class="font-semibold text-[#526377] dark:text-[#A6A6A6"
-                          >90%</span
+                          >35%</span
                         >
                       </div>
                       <div
@@ -522,8 +468,8 @@
                       <button class="resume-btn">Print</button>
                       <button class="resume-btn">Print</button>
                       <button class="resume-btn">Time Management</button>
-                      <button class="resume-btn">Flexibility</button>
-                      <button class="resume-btn">Print</button>
+                      <button class="resume-btn">App Mobile</button>
+                      <button class="resume-btn">Cyber Security</button>
                     </div>
                   </div>
                   <!-- end button group -->
